@@ -9,7 +9,10 @@ const CollectionA: CollectionConfig = {
       relationTo: 'collection-a',
       required: true
     }
-  ]
+  ],
+  access: {
+    read: () => true
+  }
 }
 
 export default CollectionA;
