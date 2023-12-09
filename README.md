@@ -57,4 +57,8 @@ npx create-payload-app@latest
 git init
 ```
 
-3. 
+3. Checked in .env and updated docker-compose.yml to link mongo (it is the only way this works on my mac)
+```
+links:
+  - "mongo"
+```
