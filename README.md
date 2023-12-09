@@ -62,3 +62,5 @@ git init
 links:
   - "mongo"
 ```
+
+4. Added collections to demonstrate issue
