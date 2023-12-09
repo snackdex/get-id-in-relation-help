@@ -25,6 +25,6 @@ export default buildConfig({
   },
   plugins: [payloadCloud()],
   db: mongooseAdapter({
-    url: process.env.DATABASE_URI,
+    url: "mongodb://localhost:27017/get-id-in-relation-help",
   }),
 })
