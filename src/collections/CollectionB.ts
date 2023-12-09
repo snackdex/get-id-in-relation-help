@@ -5,7 +5,11 @@ const CollectionB: CollectionConfig = {
   fields: [
   ],
   access: {
-    read: () => true,
+    read: ({ id }) => {
+      // expecting this to be defined
+      console.log({id});
+      return true;
+    },
   }
 }
 export default CollectionB;

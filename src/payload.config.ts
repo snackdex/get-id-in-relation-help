@@ -25,6 +25,7 @@ export default buildConfig({
   },
   plugins: [payloadCloud()],
   db: mongooseAdapter({
-    url: "mongodb://localhost:27017/get-id-in-relation-help",
+    // replace `mongo` with `localhost:27017` only when applying migrations
+    url: "mongodb://mongo/get-id-in-relation-help",
   }),
 })

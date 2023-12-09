@@ -6,8 +6,17 @@ const CollectionA: CollectionConfig = {
     {
       name: 'collectionB',
       type: "relationship",
-      relationTo: 'collection-a',
-      required: true
+      relationTo: 'collection-b',
+      required: true,
+      hooks: {
+        afterRead: [
+          ({ value }) => {
+            // we know the value here 
+            // and this runs before collectionB access.read
+            console.log({value})
+          }
+        ]
+      }
     }
   ],
   access: {

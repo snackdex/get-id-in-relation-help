@@ -68,3 +68,5 @@ links:
 5. Added seed data to demonstrate issue
 
 6. Disabled access control for users to help demonstrate issue faster
+
+7. Add logs to demonstrate issue
